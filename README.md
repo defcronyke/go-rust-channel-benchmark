@@ -4,7 +4,7 @@ Compare performance of Go channels and goroutines with Rust channels and corouti
 ----------------
 The benchmarks create a u64 channel, and then spawn some threads (10 and 10000),
 and then each thread sends a u64 over the channel. Then we wait until all channel
-messages have been reveived.
+messages have been received.
 
 To run the benchmark, clone this repository and then run in a terminal: ./run.sh
 
