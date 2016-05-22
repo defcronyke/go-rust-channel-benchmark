@@ -9,7 +9,7 @@ messages have been received.
 To run the benchmark, clone this repository and then run in a terminal: ./run.sh
 
 ----------------
-My results on a quad-core AMD Phenom II 3GHz with 7GB RAM look like this:
+My results on a 3GHz quad-core AMD Phenom II with 7GB DDR2 RAM look like this:
 
 Go:
 BenchmarkGoChannel10uint64-4   	  100000	     12169 ns/op
