@@ -1,0 +1,15 @@
+[package]
+name = "green-threads-channels"
+version = "0.1.0"
+authors = ["Jeremy Carter <Jeremy@JeremyCarter.ca>"]
+
+[dependencies]
+mioco = "*"
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
