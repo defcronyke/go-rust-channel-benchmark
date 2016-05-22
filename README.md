@@ -7,6 +7,7 @@ and then each thread sends a u64 over the channel. Then we wait until all channe
 messages have been reveived.
 
 To run the benchmark, clone this repository and then run in a terminal: ./run.sh
+
 ----------------
 My results on a quad-core AMD Phenom II 3GHz with 7GB RAM look like this:
 
@@ -19,6 +20,7 @@ test tests::bench_rust_channel_10000_u64         ... bench: 182,032,841 ns/iter 
 test tests::bench_rust_channel_10_u64            ... bench:   9,514,493 ns/iter (+/- 6,558,879)
 test tests::bench_rust_channel_threads_10000_u64 ... bench: 505,942,488 ns/iter (+/- 28,496,670)
 test tests::bench_rust_channel_threads_10_u64    ... bench:     306,669 ns/iter (+/- 71,823)
+
 ----------------
 I wrote this because I'm looking to switch from Go to Rust for new projects,
 and I wanted to see how the two languages compare in regards to concurrency
